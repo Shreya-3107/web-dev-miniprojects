@@ -1,0 +1,3 @@
+[submodule "workshop-tasks/registration-form"]
+	path = workshop-tasks/registration-form
+	url = https://github.com/Shreya-3107/registration-form.git
