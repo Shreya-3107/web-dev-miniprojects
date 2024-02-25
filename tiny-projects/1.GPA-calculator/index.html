@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>GPA Calculator</title>
+</head>
+<body>
+    <div class="main_box">
+        <div class="header">
+            <h1>GPA Calculator</h1>
+        </div>
+        <div class="content_box">
+            <div class="input_field">
+                <div class="the-table">
+                    <table id="myTable" class="table-bordered table-responsive">
+                        <tr>
+                            <th>S.no</th>
+                            <th>Subject</th>
+                            <th>Credits</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" id="value1c1" class="sub" placeholder="Eg: Data structures"></td>
+                            <td><input type="number" id="value1c2" class="cred" placeholder="Eg: 3"></td>
+                            <td><input type="text" id="value1c3" class="grade" placeholder="Eg: A+"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <button onclick="createNewRow()" class="buttonnn">Add new</button>
+                    <button onclick="deleteLastRow()" class="buttonnn">Delete last</button>
+                    <button onclick="calculate()" class="buttonnn">Calculate</button>
+                </div>
+            </div>
+            <div class="output_field">GPA: <span id="disp"></span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
