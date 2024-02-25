@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main-box">
+        <section class="header">Bill Calculator</section>
+        <div class="content-box">
+            <div class="input-box">
+                <h2 id="sub-head">Select from menu</h2>
+                <form name="food-items" class="food">
+                    <div class="image">
+                        <figure>
+                            <img src="momos.jpg" alt="momos" class="img">
+                            <figcaption>Momos: Rs. 99</figcaption>
+                        </figure>
+                        <div class="button">
+                            <input type="button" value="+" id="momos" class="inp-button">
+                            <input type="button" value="-" id="momos" class="inp-button">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <figure>
+                            <img src="pizza.jpg" alt="pizza" class="img">
+                            <figcaption>Pizza: Rs. 399</figcaption>
+                        </figure>
+                        <div class="button">
+                            <input type="button" value="+" id="pizza" class="inp-button">
+                            <input type="button" value="-" id="pizza" class="inp-button">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <figure>
+                            <img src="french fries.jpg" alt="french fries" class="img">
+                            <figcaption>French fries: Rs. 155</figcaption>
+                        </figure>
+                        <div class="button">
+                            <input type="button" value="+" id="fries" class="inp-button">
+                            <input type="button" value="-" id="fries" class="inp-button">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <figure>
+                            <img src="burger.jpg" alt="burger" class="img">
+                            <figcaption>Cheese burger: Rs. 149</figcaption>
+                        </figure>
+                        <div class="button">
+                            <input type="button" value="+" id="burger" class="inp-button">
+                            <input type="button" value="-" id="burger" class="inp-button">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <figure>
+                            <img src="smiley.jpg" alt="momos" class="img">
+                            <figcaption>Potato smiley: Rs. 80</figcaption>
+                        </figure>
+                        <div class="button">
+                            <input type="button" value="+" id="smiley" class="inp-button">
+                            <input type="button" value="-" id="smiley" class="inp-button">
+                        </div>
+                    </div>
+                    <div class="calc">
+                        <input type="button" value="calculate!" id="calc" class="calculate inp-button">
+                    </div>
+                </form>
+            </div>
+            <div class="bill-container">
+                <div class="view-container">
+                    <h2 class="sub-head">Selected:</h2>
+                    <p id="disp"></p><br>
+                </div>
+                <div class="total-container">
+                    <p>
+                        Sum: <span id="sum">-nil-</span><br>
+                        Tax: <span id="tax">-nil-</span>
+                    </p>
+                    <hr>
+                    <p>
+                        Total: <span id="total"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
